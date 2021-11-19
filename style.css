@@ -1,0 +1,64 @@
+.carousel-wrap {
+  position: relative;
+  width: 548px;
+  padding: 0 40px;
+  margin: auto;
+}
+.carousel-wrap img {
+  width: 170px;
+  height: 170px;
+}
+.gallery-wrap {
+  width: 540px;
+  overflow: hidden;
+}
+.gallery-wrap ul {
+  height: 180px;
+  width: 9999px;
+  padding: 0;
+  transition: margin-left 250ms;
+  font-size: 0;
+}
+.gallery-wrap li {
+  display: inline-block;
+  margin: 5px;
+  box-shadow: 1px 2px 5px 0px;
+}
+.arrow {
+  position: absolute;
+  top: 85px;
+  border: 0;
+  font-size: 0;
+  line-height: 0;
+}
+.arrow:before {
+  display: block;
+  width: 10px;
+  height: 21px;
+  border: 1px solid;
+  border-radius: 50%;
+  position: absolute;
+  top: -11px;
+  padding: 0px 7px 2px 6px;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #fff;
+}
+.arrow:hover:before {
+  background: #ccc;
+  cursor: pointer;
+}
+.prev {
+  left: 15px;
+}
+.next {
+  right: 20px;
+}
+.prev:before {
+  content: "\2770";
+  left: -7px;
+}
+.next:before {
+  content: "\2771";
+  right: -6px;
+}
